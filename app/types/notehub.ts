@@ -2,7 +2,13 @@ export interface NotehubEvent {
   uid: string;
   when: number;
   file: string;
-  body: Record<string, any>;
+  body: {
+    co2?: number;
+    temp?: number;
+    humidity?: number;
+    voltage?: number;
+    [key: string]: number | undefined;
+  };
   device: string;
   sn: string;
   best_id: string;

@@ -20,8 +20,11 @@ export default function EventList() {
         } else {
           setError(data.error || "Failed to fetch events");
         }
-      } catch (_) {
-        setError("Failed to fetch events");
+      } catch (error) {
+        setError(
+          "Failed to fetch events: " +
+            (error instanceof Error ? error.message : "Unknown error")
+        );
       } finally {
         setLoading(false);
       }
