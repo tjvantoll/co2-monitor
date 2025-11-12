@@ -146,7 +146,7 @@ export default function MetricCharts({ events }: { events: NotehubEvent[] }) {
   if (Object.keys(chartData).length === 0) {
     return (
       <div className="p-8 text-center text-gray-500 bg-white rounded-lg shadow">
-        No numeric data found in events
+        No data found
       </div>
     );
   }

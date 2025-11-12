@@ -6,8 +6,8 @@ import Header from "./components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AirIQ - Smart Air Quality Monitoring",
-  description: "Real-time air quality monitoring and analytics",
+  title: "CO2 Monitor - Real-time CO2 Monitoring",
+  description: "Real-time CO2 monitoring and analytics",
 };
 
 export default function RootLayout({

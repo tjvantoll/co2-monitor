@@ -10,13 +10,13 @@ export default function Header() {
               <div className="flex items-center gap-2">
                 <FaWind className="h-8 w-8 text-blue-500" />
                 <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
-                  AirIQ
+                  CO2 Monitor
                 </span>
               </div>
             </div>
             <div className="ml-4">
               <span className="text-sm text-gray-500">
-                Smart Air Quality Monitoring
+                Real-time Monitoring
               </span>
             </div>
           </div>
