@@ -65,7 +65,7 @@ const chartOptions = {
       },
       callbacks: {
         title: (items: TooltipItem<"line">[]) => {
-          if (items.length > 0) {
+          if (items.length > 0 && items[0].parsed.x !== null) {
             const date = new Date(items[0].parsed.x);
             return date.toLocaleString();
           }
